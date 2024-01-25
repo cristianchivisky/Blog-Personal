@@ -14,6 +14,9 @@ body{
     margin: auto;
     overflow: hidden;
 }
+h1 {
+    text-align: center;
+}
 .titulo{
     color:blueviolet;
     font-size: 30px;
@@ -79,7 +82,7 @@ header .textos-header{
 }
 .imagen-sobre-mi{
 
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 .sobre-mi .contenedor-textos{
     width: 48%;
@@ -174,21 +177,28 @@ header .textos-header{
 
 footer{
     background: #444343;
-    padding: 60px 0 30px 0;
+    padding: 20px 0;
     margin: auto;
     overflow: hidden;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .contenedor-footer{
     display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: space-around;
+    margin: 0 auto;
     padding-bottom: 50px;
     border-bottom: 1px solid #918e8e;
 }
 .content-foo{
     text-align: center;
-
+    margin-right: 45px;
+    margin-left: 45px;
 }
 .content-foo h4{
     color: rgb(226, 226, 226);
@@ -202,8 +212,8 @@ footer{
 
 .titulo-final{
     text-align: center;
-    font-size: 24px;
-    margin: 10px 0 0 10px;
+    font-size: 18px;
+    margin-top: 20px;
     color: #918e8e;
 }
 .field {
@@ -222,12 +232,31 @@ footer{
     line-height: 1.5;
     font-size: 14px;
   }
-  
-  input[type="submit"] {
-    display: block;
-    padding: 6px 30px;
-    font-size: 14px;
-    background-color: #4460AA;
-    color: #fff;
-    border: none
-  }
+
+  #button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+#button:hover {
+    background-color: #45a049; 
+}
+#form {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin: 5px 0; 
+    box-sizing: border-box; 
+}
